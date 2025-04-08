@@ -1,7 +1,11 @@
-library(ggplot2)
+# Données de base
+valeurs <- c(10, 15, 7, 20)
+noms <- c("A", "B", "C", "D")
 
-# Données
-donnees <- data.frame(
-  categorie = c("A", "B", "C", "D"),
-  valeur = c(10, 15, 7, 20)
-)
+# Barplot
+barplot(valeurs,
+        names.arg = noms,
+        col = "skyblue",
+        main = "Mon Barplot",
+        xlab = "Catégories",
+        ylab = "Valeurs")
